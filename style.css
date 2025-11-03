@@ -4,6 +4,8 @@ body {
   color: #37353E;
   text-align: center;
   padding: 25px;
+  background: linear-gradient(to bottom right, #f3e9dc, #e4cda7, #c9a66b);
+  margin: 0;
 }
 
 h1,h2{
@@ -76,4 +78,20 @@ a:hover {
   .container {
     width: 300px;
   }
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #715A5A;
+  opacity: 0.8;
+}
+footer em {
+  font-style: italic;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(to bottom right, #ede0d4, #e6ccb2, #ddb892, #b08968);
 }
