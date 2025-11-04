@@ -1,11 +1,10 @@
 body {
+  margin: 0;
+  background: transparent; /* évite que le body cache le dégradé */
   font-family: "Space Mono";
-  background-color: #D3DAD9;
   color: #37353E;
   text-align: center;
   padding: 25px;
-  background: linear-gradient(to bottom right, #f3e9dc, #e4cda7, #c9a66b);
-  margin: 0;
 }
 
 h1,h2{
@@ -92,8 +91,46 @@ footer em {
 }
 
 html {
-  min-height: 100%;
-  background: linear-gradient(to bottom right, #ede0d4, #e6ccb2, #ddb892, #b08968);
+min-height: 100%;
+background: linear-gradient(to bottom right, #f6ebde, #e4cda7, #c9a66b);
 }
 
-/* debug Mon Nov  3 20:34:27 CET 2025 */
+.inspirations {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* espace entre les blocs */
+  flex-wrap: wrap; /* pour s’adapter sur mobile */
+  margin-top: 20px;
+}
+
+.inspiration-card {
+  background-color: #F7F4EA;
+  border: 3px solid #EAEAEA;
+  border-radius: 20px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inspiration-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.inspiration-card i {
+  font-size: 30px;
+  color: #715A5A;
+  margin-bottom: 10px;
+}
+
+.inspiration-card p {
+  font-size: 14px;
+  color: #37353E;
+  margin: 0;
+}
+
+.inspiration-card a {
+  text-decoration: none;
+  color: inherit;
+}
