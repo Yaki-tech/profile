@@ -1,136 +1,114 @@
 body {
-  margin: 0;
-  background: transparent; /* évite que le body cache le dégradé */
-  font-family: "Space Mono";
+  font-family: "Nunito", "Poppins", sans-serif; /* police plus douce et relax */
+  background: linear-gradient(to bottom right, #f2e9e4, #e6ccb2, #ddb892, #b08968);
   color: #37353E;
   text-align: center;
-  padding: 25px;
+  padding: 40px;
+  margin: 0;
 }
 
-h1,h2{
-  font-family: "Space Grotesk";
-  color: #715A5A
-}
-
-li {
-  display: inline;
-}
-ul {
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #23326b;
-  font-size: 18px;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-a:hover {
-  color:#715A5A;
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  color: #715A5A;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
 }
 
 .card {
   background-color: #F7F4EA;
-  padding: 25px;
-  width: 300px;
-  margin: 25px auto;
-  border-radius: 50px;
-  border: 10px solid #EAEAEA;
+  padding: 50px;
+  width: 500px;
+  margin: 40px auto;
+  border-radius: 40px;
+  border: 8px solid #EAEAEA;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.img-circle{
-  width: 100px;
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.img-circle {
+  width: 130px;
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-#btn_brown{
-  border: 5px;
+#btn_brown {
+  border: none;
   background-color: rgb(214, 202, 139);
-  border-radius: 5px;
-  padding: 7px;
-  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #23326b;
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 960px) {
-  /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 700px;
-  }
-}
-
-@media (max-width: 720px) {
-  /* Pour un écran < 720px, cette classe CSS s'applique */
-  .container {
-    width: 500px;
-  }
-}
-
-@media (max-width: 540px) {
-  /* Pour un écran < 540px, cette classe CSS s'applique */
-  .container {
-    width: 300px;
-  }
-}
-
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 14px;
-  color: #715A5A;
-  opacity: 0.8;
-}
-footer em {
-  font-style: italic;
-}
-
-html {
-min-height: 100%;
-background: linear-gradient(to bottom right, #f6ebde, #e4cda7, #c9a66b);
+#btn_brown:hover {
+  background-color: rgb(201, 188, 127);
+  color: #4a3b1c;
 }
 
 .inspirations {
   display: flex;
   justify-content: center;
-  gap: 30px; /* espace entre les blocs */
-  flex-wrap: wrap; /* pour s’adapter sur mobile */
-  margin-top: 20px;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .inspiration-card {
   background-color: #F7F4EA;
-  border: 3px solid #EAEAEA;
+  border: 2px solid #EAEAEA;
   border-radius: 20px;
-  padding: 20px;
-  width: 180px;
+  padding: 25px;
+  width: 220px;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .inspiration-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .inspiration-card i {
-  font-size: 30px;
+  font-size: 35px;
   color: #715A5A;
   margin-bottom: 10px;
 }
 
 .inspiration-card p {
-  font-size: 14px;
+  font-size: 15px;
   color: #37353E;
+  font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
-.inspiration-card a {
-  text-decoration: none;
-  color: inherit;
+footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 15px;
+  color: #715A5A;
+  opacity: 0.8;
+  font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 720px) {
+  .card {
+    width: 90%;
+    padding: 30px;
+  }
+  .inspirations {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inspiration-card {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
