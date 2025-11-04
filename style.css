@@ -1,69 +1,74 @@
 body {
-  background: linear-gradient(to bottom right, #f3e9dc, #e4cda7, #c9a66b);
   font-family: "Nunito", "Poppins", sans-serif;
-  color: #37353E;
+  background-color: #EAD7B7; /* bois doré doux */
+  color: #4A3B1C; /* texte brun chaud */
   text-align: center;
   padding: clamp(12px, 4vw, 40px);
   margin: 0;
 }
 
+/* Titres */
 h1, h2 {
   font-family: "Poppins", sans-serif;
-  color: #715A5A;
+  color: #5C4033;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
 }
 
+/* Cartes */
 .card {
-  background-color: #F7F4EA;
-  padding: 50px;
-  width: 500px;
-  margin: 40px auto;
-  border-radius: 40px;
-  border: 8px solid #EAEAEA;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  background-color: #F7F4EA; /* beige clair */
+  padding: clamp(24px, 5vw, 50px);
+  width: clamp(320px, 92vw, 560px);
+  margin: clamp(20px, 4vw, 40px) auto;
+  border-radius: 30px;
+  border: 6px solid #E0C9A6;
+  box-shadow: 0 6px 15px rgba(74, 59, 28, 0.1);
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(74, 59, 28, 0.15);
 }
 
+/* Image de profil */
 .img-circle {
-  width: 130px;
+  width: 120px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
+/* Bouton */
 #btn_brown {
   border: none;
-  background-color: rgb(214, 202, 139);
+  background-color: #D2B48C;
   border-radius: 10px;
   padding: 10px 18px;
   font-size: 16px;
   font-weight: 600;
-  color: #23326b;
+  color: #4A3B1C;
   transition: all 0.3s ease;
 }
 
 #btn_brown:hover {
-  background-color: rgb(201, 188, 127);
-  color: #4a3b1c;
+  background-color: #C2A476;
+  color: #F7F4EA;
 }
 
+/* Section inspirations */
 .inspirations {
   display: flex;
+  gap: 24px;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
   flex-wrap: wrap;
   margin-top: 25px;
 }
 
 .inspiration-card {
   background-color: #F7F4EA;
-  border: 2px solid #EAEAEA;
+  border: 2px solid #E0C9A6;
   border-radius: 20px;
   padding: 25px;
   width: 220px;
@@ -73,42 +78,28 @@ h1, h2 {
 
 .inspiration-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(74, 59, 28, 0.1);
 }
 
 .inspiration-card i {
   font-size: 35px;
-  color: #715A5A;
+  color: #5C4033;
   margin-bottom: 10px;
 }
 
 .inspiration-card p {
   font-size: 15px;
-  color: #37353E;
+  color: #4A3B1C;
   font-family: "Nunito", sans-serif;
   margin: 0;
 }
 
+/* Footer */
 footer {
   margin-top: 60px;
   text-align: center;
   font-size: 15px;
-  color: #715A5A;
+  color: #5C4033;
   opacity: 0.8;
   font-family: "Nunito", sans-serif;
-}
-
-@media (max-width: 720px) {
-  .card {
-    width: 90%;
-    padding: 30px;
-  }
-  .inspirations {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .inspiration-card {
-    width: 80%;
-    margin: 0 auto;
-  }
 }
