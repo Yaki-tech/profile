@@ -98,17 +98,23 @@ footer {
   font-family: "Nunito", sans-serif;
 }
 
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
 @media (max-width: 720px) {
-  .card {
-    width: 90%;
-    padding: 30px;
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
   }
-  .inspirations {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .inspiration-card {
-    width: 80%;
-    margin: 0 auto;
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
   }
 }
